@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import AboutMe from "component_path";
+import AboutMe from "./aboutMe";
 
 const mapStateToProps = state => ({});
 
