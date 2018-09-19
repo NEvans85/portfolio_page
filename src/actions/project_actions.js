@@ -6,3 +6,8 @@ const receiveProjects = projects => ({
   type: RECEIVE_PROJECTS,
   projects
 });
+
+export const getProjects = () => dispatch =>
+  ProjectsApiUtil.fetchProjects().then(projects =>
+    dispatch(receiveProjects(projects))
+  );
