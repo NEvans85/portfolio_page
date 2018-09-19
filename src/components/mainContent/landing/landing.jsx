@@ -8,10 +8,7 @@ class Landing extends React.Component {
   render() {
     return (
       <div className="landing-page">
-        <p className="welcome">
-          Hi I'm Nichoals Evans. I am a software engineer and web developer.
-          Thank you for visiting my portfolio.
-        </p>
+        <p className="welcome">THis is the Langing Page.</p>
       </div>
     );
   }

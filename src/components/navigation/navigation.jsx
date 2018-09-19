@@ -6,7 +6,11 @@ class Navigation extends React.Component {
   }
 
   render() {
-    return <div />;
+    return (
+      <div>
+        <p>This is the navigation component.</p>
+      </div>
+    );
   }
 }
 

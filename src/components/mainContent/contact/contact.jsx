@@ -6,7 +6,11 @@ class Contact extends React.Component {
   }
 
   render() {
-    return <div />;
+    return (
+      <div>
+        <p> This is the page for the contact form</p>
+      </div>
+    );
   }
 }
 

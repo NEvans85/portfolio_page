@@ -6,7 +6,11 @@ class AboutMe extends React.Component {
   }
 
   render() {
-    return <div />;
+    return (
+      <div>
+        <p> This is the page for my background/education.</p>
+      </div>
+    );
   }
 }
 
