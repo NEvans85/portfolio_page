@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Route } from "react-router-dom";
-import logo from "./logo.svg";
 import Navigation from "./navigation/navigation";
 import AboutMe from "./mainContent/aboutMe/aboutMe";
 import Contact from "./mainContent/contact/contact";

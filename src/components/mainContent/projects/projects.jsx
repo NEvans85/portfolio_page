@@ -4,25 +4,38 @@ import ProjectsContent from "../../../Content/projectsContent";
 class Projects extends React.Component {
   constructor(props) {
     super(props);
-
-    this.activeDisplay = "overview";
-    this.activeProjectId = 1;
-
+    this.state = {
+      activeDisplay: "overview",
+      activeProjectId: 1
+    };
+    this.content = ProjectsContent;
     this.displayContent = this.displayContent.bind(this);
   }
 
   displayContent() {
-    switch (this.activeDisplay) {
+    const activeProject = this.content[this.state.activeProjectId];
+    switch (this.state.activeDisplay) {
       case "overview":
-        return;
+        return (
+          <div className="projectOverview">
+            <p className="projectTitle">Project Name: {activeProject.name}</p>
+            <p>{activeProject.shortDescription}</p>
+            <p>Live Link: {activeProject.liveLink}</p>
+            <p>Github Repo: {activeProject.repoLink}</p>
+          </div>
+        );
       case "detail":
+        return <p>{activeProject.longDescription}</p>;
+      default:
         return;
     }
   }
 
-  render() {
-    const content = ProjectsContent;
+  handleContentNavigation(category) {
+    this.setState({ activeDisplay: category });
+  }
 
+  render() {
     return (
       <div className="projectsContainer">
         <div className="projectsNavigation">
@@ -32,10 +45,20 @@ class Projects extends React.Component {
           */}
         </div>
         <div className="projectContent">
-          <img src="" alt="" />
+          <img className="activeProjectImage" src="" alt="" />
           <div className="contentNavigation">
-            <div className="showOverview">Overview</div>
-            <div className="showDetail">Detail</div>
+            <button
+              className="showOverview"
+              onClick={() => this.handleContentNavigation("overview")}
+            >
+              Overview
+            </button>
+            <button
+              className="showDetail"
+              onClick={() => this.handleContentNavigation("detail")}
+            >
+              Detail
+            </button>
           </div>
           <div className="projectDisplay">{this.displayContent()}</div>
         </div>
