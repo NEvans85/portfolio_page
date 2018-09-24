@@ -5,15 +5,26 @@ class AboutMe extends React.Component {
   constructor(props) {
     super(props);
 
+    this.content = AboutMeContent;
+
     this.state = { activeDisplay: "general" };
+    this.handleContentNavigation = this.handleContentNavigation.bind(this);
   }
 
   displayContent() {
     switch (this.state.activeDisplay) {
       case "general":
-        return;
+        return <p>{this.content["general"]}</p>;
       case "education":
-        return;
+        return (
+          <div className="education">
+            <div className="educationNavigation">
+              <button>The Internet</button>
+              <button>App Academy</button>
+              <button>University of Phoenix</button>
+            </div>
+          </div>
+        );
       default:
         return;
     }
@@ -40,7 +51,7 @@ class AboutMe extends React.Component {
             Education
           </button>
         </div>
-        <div>{() => this.displayContent()}</div>
+        <div>{this.displayContent()}</div>
       </div>
     );
   }
