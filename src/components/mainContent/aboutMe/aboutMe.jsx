@@ -1,5 +1,5 @@
 import React from "react";
-import AboutMeContent from "../../../content/aboutMeContent";
+import AboutMeContent from "../../../content/aboutMe/aboutMeContent";
 
 class AboutMe extends React.Component {
   constructor(props) {
