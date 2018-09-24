@@ -1,5 +1,5 @@
 import React from "react";
-import ProjectsContent from "../../../Content/projectsContent";
+import ProjectsContent from "../../../content/projectsContent";
 
 class Projects extends React.Component {
   constructor(props) {
