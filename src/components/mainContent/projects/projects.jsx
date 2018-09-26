@@ -35,7 +35,12 @@ class Projects extends React.Component {
     this.setState({ activeDisplay: category });
   }
 
+  setActiveProject(id) {
+    this.setState({ activeProjectId: id });
+  }
+
   render() {
+    let projectIds = Object.keys(this.content);
     return (
       <div className="projectsContainer">
         <div className="projectsNavigation">
@@ -43,6 +48,13 @@ class Projects extends React.Component {
             For each project in content, display the iconImage
             Clicking its image will load the content into the projectContent element
           */}
+          {projectIds.map(id => {
+            <img
+              src={this.content[id].iconImage}
+              alt={this.content[id].iconImageAlt}
+              onClick={() => this.setActiveProject(id)}
+            />;
+          })}
         </div>
         <div className="projectContent">
           <img className="activeProjectImage" src="" alt="" />
