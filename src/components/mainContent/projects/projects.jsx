@@ -44,17 +44,14 @@ class Projects extends React.Component {
     return (
       <div className="projectsContainer">
         <div className="projectsNavigation">
-          {/*
-            For each project in content, display the iconImage
-            Clicking its image will load the content into the projectContent element
-          */}
-          {projectIds.map(id => {
+          {projectIds.map(id => (
             <img
+              key={id}
               src={this.content[id].iconImage}
               alt={this.content[id].iconImageAlt}
               onClick={() => this.setActiveProject(id)}
-            />;
-          })}
+            />
+          ))}
         </div>
         <div className="projectContent">
           <img className="activeProjectImage" src="" alt="" />

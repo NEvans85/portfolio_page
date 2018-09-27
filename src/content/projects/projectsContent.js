@@ -6,8 +6,9 @@ const ProjectsContent = {
     longDescription: "Sample Long Description",
     liveLink: "Sample Live Link",
     repoLink: "Sample Repo Link",
-    iconImage: "Sample Icon Image",
-    iconImageAlt: "Sample Icon Image Alt Text",
+    iconImage:
+      "https://res.cloudinary.com/arcane-lab/image/upload/v1506095816/Portfolio_Assets/SiteLogo_ttle6p.png",
+    iconImageAlt: "The Arcane Laboratory",
     previewImage: "Sample Preview Image",
     previewImageAlt: "Sample Preview Image Alt Text"
   },
@@ -18,8 +19,9 @@ const ProjectsContent = {
     longDescription: "Sample Long Description",
     liveLink: "Sample Live Link",
     repoLink: "Sample Repo Link",
-    iconImage: "Sample Icon Image",
-    iconImageAlt: "Sample Icon Image Alt Text",
+    iconImage:
+      "https://res.cloudinary.com/arcane-lab/image/upload/v1538057050/Portfolio_Assets/soccer-34898_1280.png",
+    iconImageAlt: "Shuffleboard Soccer",
     previewImage: "Sample Preview Image",
     previewImageAlt: "Sample Preview Image Alt Text"
   },
@@ -30,8 +32,9 @@ const ProjectsContent = {
     longDescription: "Sample Long Description",
     liveLink: "Sample Live Link",
     repoLink: "Sample Repo Link",
-    iconImage: "Sample Icon Image",
-    iconImageAlt: "Sample Icon Image Alt Text",
+    iconImage:
+      "https://res.cloudinary.com/arcane-lab/image/upload/v1538057532/Portfolio_Assets/vr-headset-2.png",
+    iconImageAlt: "Immerse",
     previewImage: "Sample Preview Image",
     previewImageAlt: "Sample Preview Image Alt Text"
   },
@@ -42,7 +45,7 @@ const ProjectsContent = {
     longDescription: "Sample Long Description",
     liveLink: "Sample Live Link",
     repoLink: "Sample Repo Link",
-    iconImage: "Sample Icon Image",
+    iconImage: "Portfolio Page",
     iconImageAlt: "Sample Icon Image Alt Text",
     previewImage: "Sample Preview Image",
     previewImageAlt: "Sample Preview Image Alt Text"
