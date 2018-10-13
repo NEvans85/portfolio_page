@@ -10,7 +10,7 @@ import "./App.css";
 class App extends Component {
   render() {
     return (
-      <div className="root_body">
+      <div className="rootBody">
         <header>
           <Route path="/" component={Navigation} />
         </header>

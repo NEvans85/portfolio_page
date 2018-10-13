@@ -1,5 +1,6 @@
 import React from "react";
 import ProjectsContent from "../../../content/projects/projectsContent";
+import "./projects.css";
 
 class Projects extends React.Component {
   constructor(props) {

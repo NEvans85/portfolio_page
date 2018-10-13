@@ -1,0 +1,67 @@
+.name {
+  font-family: "Bowlby One SC";
+  font-size: 60px;
+  overflow: hidden;
+  width: 75%;
+  margin: auto;
+  margin-top: 0%;
+  animation: 5s move_up;
+}
+
+.fName {
+  margin-bottom: -30px;
+  animation: 2s slide-right linear;
+}
+
+.lName {
+  margin-top: -30px;
+  animation: 2s slide-left linear;
+}
+
+.landingNavigation {
+  opacity: 1;
+  animation: 5s reveal;
+}
+
+@keyframes slide-right {
+  0% {
+    margin-left: -100%;
+    width: 300%;
+  }
+
+  100% {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    margin-left: 100%;
+    width: 300%;
+  }
+  100% {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes move_up {
+  0%,
+  60% {
+    margin-top: 10%;
+  }
+  100% {
+    margin-top: 0%;
+  }
+}
+
+@keyframes reveal {
+  0%,
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

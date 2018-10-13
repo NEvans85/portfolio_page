@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import "./landing.css";
 
 class Landing extends React.Component {
   constructor(props) {
@@ -8,7 +10,15 @@ class Landing extends React.Component {
   render() {
     return (
       <div className="landing-page">
-        <p className="welcome">THis is the Langing Page.</p>
+        <div className="name">
+          <p className="fName">NICK</p>
+          <p className="lName">EVANS</p>
+        </div>
+        <div className="landingNavigation">
+          <Link to="/aboutMe">About Me</Link>
+          <Link to="/projects">My Projects</Link>
+          <Link to="/contact">Contact Me</Link>
+        </div>
       </div>
     );
   }
