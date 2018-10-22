@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./navigation.css";
 
 class Navigation extends React.Component {
   constructor(props) {
@@ -10,7 +11,7 @@ class Navigation extends React.Component {
     return (
       <div className="nav-bar">
         <Link to="/aboutMe">About Me</Link>
-        <Link to="/projects">My Projects</Link>
+        <Link to="/projects">Experience</Link>
         <Link to="/contact">Contact Me</Link>
       </div>
     );

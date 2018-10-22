@@ -7,7 +7,7 @@ const ProjectsContent = {
     liveLink: "Sample Live Link",
     repoLink: "Sample Repo Link",
     iconImage:
-      "https://res.cloudinary.com/arcane-lab/image/upload/v1506095816/Portfolio_Assets/SiteLogo_ttle6p.png",
+      "https://res.cloudinary.com/arcane-lab/image/upload/v1540236663/al_logo_krwdpq.png",
     iconImageAlt: "The Arcane Laboratory",
     previewImage: "Sample Preview Image",
     previewImageAlt: "Sample Preview Image Alt Text"
