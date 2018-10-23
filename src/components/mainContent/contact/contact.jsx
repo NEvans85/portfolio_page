@@ -12,6 +12,7 @@ class Contact extends React.Component {
   defaultState() {
     return {
       name: "",
+      organization: "",
       email: "",
       message: ""
     };
@@ -36,6 +37,13 @@ class Contact extends React.Component {
             onChange={this.updateInput("name")}
             type="text"
             value={this.state.name}
+          />
+
+          <label>Your Organization: </label>
+          <input
+            onChange={this.updateInput("organization")}
+            type="text"
+            value={this.state.organization}
           />
 
           <label>Your Email: </label>

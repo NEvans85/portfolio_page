@@ -45,7 +45,8 @@ const ExperienceContent = {
     longDescription: "Portfolio Page Sample Long Description",
     liveLink: "Sample Live Link",
     repoLink: "Sample Repo Link",
-    iconImage: "Portfolio Page",
+    iconImage:
+      "https://res.cloudinary.com/arcane-lab/image/upload/v1540323262/services-portfolio_zzvid8.png",
     iconImageAlt: "Sample Icon Image Alt Text",
     previewImage: "Sample Preview Image",
     previewImageAlt: "Sample Preview Image Alt Text"
@@ -53,22 +54,30 @@ const ExperienceContent = {
   5: {
     id: 5,
     name: "Internet Learning",
-    shortDescription: "Study of algorithms, data structures"
+    shortDescription: "Study of algorithms, data structures",
+    iconImage:
+      "https://res.cloudinary.com/arcane-lab/image/upload/v1540323275/003-www_qfv96s.png"
   },
   6: {
     id: 6,
     name: "App Academy",
-    shortDescription: ""
+    shortDescription: "",
+    iconImage:
+      "https://res.cloudinary.com/arcane-lab/image/upload/e_blackwhite/v1540323310/AA-logo_sskdv3.jpg"
   },
   7: {
     id: 7,
     name: "University of Phoenix",
-    shortDescription: ""
+    shortDescription: "",
+    iconImage:
+      "https://res.cloudinary.com/arcane-lab/image/upload/e_blackwhite/v1540323313/UofP-logo_ugtqk8.png"
   },
   8: {
     id: 8,
     name: "Future Projects",
-    shortDescription: ""
+    shortDescription: "",
+    iconImage:
+      "https://res.cloudinary.com/arcane-lab/image/upload/v1540323270/002-brain_p5bv1z.png"
   }
 };
 
