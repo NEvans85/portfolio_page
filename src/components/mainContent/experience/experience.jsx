@@ -1,15 +1,15 @@
 import React from "react";
-import ProjectsContent from "../../../content/projects/projectsContent";
-import "./projects.css";
+import ExperienceContent from "../../../content/experience/experienceContent";
+import "./experience.css";
 
-class Projects extends React.Component {
+class Experience extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       activeDisplay: "overview",
       activeProjectId: 1
     };
-    this.content = ProjectsContent;
+    this.content = ExperienceContent;
     this.displayContent = this.displayContent.bind(this);
   }
 
@@ -43,8 +43,8 @@ class Projects extends React.Component {
   render() {
     let projectIds = Object.keys(this.content);
     return (
-      <div className="projectsContainer">
-        <div className="projectsNavigation">
+      <div className="experienceContainer">
+        <div className="experienceNavigation">
           {projectIds.map(id => (
             <img
               key={id}
@@ -77,4 +77,4 @@ class Projects extends React.Component {
   }
 }
 
-export default Projects;
+export default Experience;

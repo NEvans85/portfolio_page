@@ -11,7 +11,7 @@ class Navigation extends React.Component {
     return (
       <div className="nav-bar">
         <Link to="/aboutMe">About Me</Link>
-        <Link to="/projects">Experience</Link>
+        <Link to="/experience">Experience</Link>
         <Link to="/contact">Contact Me</Link>
       </div>
     );

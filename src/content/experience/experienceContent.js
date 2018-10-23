@@ -1,4 +1,4 @@
-const ProjectsContent = {
+const ExperienceContent = {
   1: {
     id: 1,
     name: "The Arcane Laboratory",
@@ -52,4 +52,4 @@ const ProjectsContent = {
   }
 };
 
-export default ProjectsContent;
+export default ExperienceContent;
