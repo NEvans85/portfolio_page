@@ -50,7 +50,7 @@ class Experience extends React.Component {
               key={id}
               src={this.content[id].iconImage}
               alt={this.content[id].iconImageAlt}
-              onClick={() => this.setActiveProject(id)}
+              onMouseOver={() => this.setActiveProject(id)}
             />
           ))}
         </div>

@@ -2,8 +2,8 @@ const ExperienceContent = {
   1: {
     id: 1,
     name: "The Arcane Laboratory",
-    shortDescription: "Sample Short Description",
-    longDescription: "Sample Long Description",
+    shortDescription: "Arcane Lab  Short Description",
+    longDescription: " Arcane Lab Long Description",
     liveLink: "Sample Live Link",
     repoLink: "Sample Repo Link",
     iconImage:
@@ -16,7 +16,7 @@ const ExperienceContent = {
     id: 2,
     name: "Shuffleboard Soccer",
     shortDescription: "Sample Short Description",
-    longDescription: "Sample Long Description",
+    longDescription: "Shuffleboard DSoccer Sample Long Description",
     liveLink: "Sample Live Link",
     repoLink: "Sample Repo Link",
     iconImage:
@@ -29,7 +29,7 @@ const ExperienceContent = {
     id: 3,
     name: "Immerse",
     shortDescription: "Sample Short Description",
-    longDescription: "Sample Long Description",
+    longDescription: "Immerse Sample Long Description",
     liveLink: "Sample Live Link",
     repoLink: "Sample Repo Link",
     iconImage:
@@ -42,13 +42,33 @@ const ExperienceContent = {
     id: 4,
     name: "Portfolio Page",
     shortDescription: "Sample Short Description",
-    longDescription: "Sample Long Description",
+    longDescription: "Portfolio Page Sample Long Description",
     liveLink: "Sample Live Link",
     repoLink: "Sample Repo Link",
     iconImage: "Portfolio Page",
     iconImageAlt: "Sample Icon Image Alt Text",
     previewImage: "Sample Preview Image",
     previewImageAlt: "Sample Preview Image Alt Text"
+  },
+  5: {
+    id: 5,
+    name: "Internet Learning",
+    shortDescription: "Study of algorithms, data structures"
+  },
+  6: {
+    id: 6,
+    name: "App Academy",
+    shortDescription: ""
+  },
+  7: {
+    id: 7,
+    name: "University of Phoenix",
+    shortDescription: ""
+  },
+  8: {
+    id: 8,
+    name: "Future Projects",
+    shortDescription: ""
   }
 };
 
