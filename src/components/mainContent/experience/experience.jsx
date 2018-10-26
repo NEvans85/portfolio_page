@@ -6,15 +6,11 @@ class Experience extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      activeDisplay: "overview",
-      activeProjectId: 1,
-      contentDisplay: ""
+      activeProjectId: 0,
+      contentDisplay: "",
+      cancelInterval: false
     };
     this.content = ExperienceContent;
-  }
-
-  handleContentNavigation(category) {
-    this.setState({ activeDisplay: category });
   }
 
   handleHover(id) {
@@ -24,8 +20,9 @@ class Experience extends React.Component {
 
     let contentDisplayInterval = () => {
       const intervalId = setInterval(() => {
-        if (this.state.activeProjectId != id) {
+        if ((this.state.activeProjectId !== id) | this.state.cancelInterval) {
           clearInterval(intervalId);
+          this.setState({ cancelInterval: false });
         } else if (toDisplay.length > 0) {
           let content = this.state.contentDisplay;
           content += toDisplay.shift();
@@ -49,7 +46,9 @@ class Experience extends React.Component {
               src={this.content[id].iconImage}
               alt={this.content[id].iconImageAlt}
               onMouseOver={() => this.handleHover(id)}
-              onMouseLeave={() => this.setState({ contentDisplay: "" })}
+              onMouseLeave={() =>
+                this.setState({ cancelInterval: true, contentDisplay: "" })
+              }
             />
           ))}
         </div>
