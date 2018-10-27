@@ -29,6 +29,7 @@ class Experience extends React.Component {
           this.setState({ contentDisplay: content });
         } else {
           clearInterval(intervalId);
+          this.setState({ cancelInterval: false });
         }
       }, 100);
     };
