@@ -1,4 +1,27 @@
-.experienceNavigation img {
+.experienceContainer img {
+  height: 80%;
+  width: 80%;
+  padding: 8%;
+  cursor: pointer;
+  border: 5px solid grey;
+  background-color: ;
+}
+
+.experienceContainer {
+  margin: auto;
+  display: grid;
+  grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  height: 750px;
+  width: 750px;
+}
+
+.projectPreview {
+  justify-content: center;
   height: 200px;
   width: 200px;
+  order: 4;
+  color: green;
+  background-color: black;
 }
