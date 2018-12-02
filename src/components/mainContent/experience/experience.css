@@ -1,6 +1,8 @@
 .experienceContainer {
+  width: 100%;
   background-color: #4e5156;
   border-width: 20px;
+  border-color: brown;
   margin: 0px;
 }
 
@@ -20,6 +22,7 @@
   grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
   align-items: center;
   justify-items: center;
+  background-color: black;
 }
 
 .projectPreview {
@@ -28,6 +31,5 @@
   order: 4;
   padding: 5%;
   color: green;
-  background-color: black;
   box-sizing: border-box;
 }

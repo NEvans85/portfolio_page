@@ -1,9 +1,13 @@
 .rootBody {
   text-align: center;
+  height: 100%;
 }
 
 .mainContent {
-  height: 100%;
-  width: 80%;
+  height: 92%;
+  width: 86%;
   margin: auto;
+}
+header {
+  height: 8%;
 }

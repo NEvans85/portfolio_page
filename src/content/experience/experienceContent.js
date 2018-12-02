@@ -9,7 +9,7 @@ const ExperienceContent = {
     liveLink: "Sample Live Link",
     repoLink: "Sample Repo Link",
     iconImage:
-      "https://res.cloudinary.com/arcane-lab/image/upload/v1540236663/al_logo_krwdpq.png",
+      "https://res.cloudinary.com/arcane-lab/image/upload/e_replace_color:green:80:1f1f1f/v1540236663/Portfolio_Assets/al_logo_krwdpq.png",
     iconImageAlt: "The Arcane Laboratory",
     previewImage3:
       "https://res.cloudinary.com/arcane-lab/image/upload/v1542061601/ARCANELANB_DB_tomaj1.gif",
@@ -30,7 +30,7 @@ const ExperienceContent = {
     liveLink: "Sample Live Link",
     repoLink: "Sample Repo Link",
     iconImage:
-      "https://res.cloudinary.com/arcane-lab/image/upload/v1538057050/Portfolio_Assets/soccer-34898_1280.png",
+      "https://res.cloudinary.com/arcane-lab/image/upload/e_replace_color:green:80:000001/v1538057050/Portfolio_Assets/soccer-34898_1280.png",
     iconImageAlt: "Shuffleboard Soccer",
     previewImage1: "Sample Preview Image",
     previewImage1Alt: "Sample Preview Image Alt Text",
@@ -49,7 +49,7 @@ const ExperienceContent = {
     liveLink: "Sample Live Link",
     repoLink: "Sample Repo Link",
     iconImage:
-      "https://res.cloudinary.com/arcane-lab/image/upload/v1538057532/Portfolio_Assets/vr-headset-2.png",
+      "https://res.cloudinary.com/arcane-lab/image/upload/e_replace_color:green:80:000001/v1538057532/Portfolio_Assets/vr-headset-2.png",
     iconImageAlt: "Immerse",
     previewImage1: "Sample Preview Image",
     previewImage1Alt: "Sample Preview Image Alt Text",
@@ -68,7 +68,7 @@ const ExperienceContent = {
     liveLink: "Sample Live Link",
     repoLink: "Sample Repo Link",
     iconImage:
-      "https://res.cloudinary.com/arcane-lab/image/upload/v1540323262/services-portfolio_zzvid8.png",
+      "https://res.cloudinary.com/arcane-lab/image/upload/e_replace_color:green:80:000001/v1540323262/Portfolio_Assets/services-portfolio_zzvid8.png",
     iconImageAlt: "Sample Icon Image Alt Text",
     previewImage1: "Sample Preview Image",
     previewImage1Alt: "Sample Preview Image Alt Text",
@@ -84,7 +84,7 @@ const ExperienceContent = {
     shortDescription: "Independent study of algorithms and data structures",
     additionalInfo: "",
     iconImage:
-      "https://res.cloudinary.com/arcane-lab/image/upload/v1540323275/003-www_qfv96s.png",
+      "https://res.cloudinary.com/arcane-lab/image/upload/e_replace_color:green:80:000001/v1540323275/Portfolio_Assets/003-www_qfv96s.png",
     previewImage1: "Sample Preview Image",
     previewImage1Alt: "Sample Preview Image Alt Text",
     previewImage2: "Sample Preview Image",
@@ -100,7 +100,7 @@ const ExperienceContent = {
       "Intense 13 week bootcamp teaching full stack web development",
     additionalInfo: "",
     iconImage:
-      "https://res.cloudinary.com/arcane-lab/image/upload/e_blackwhite/v1540323310/AA-logo_sskdv3.jpg",
+      "https://res.cloudinary.com/arcane-lab/image/upload/e_bgremoval/e_replace_color:green:80:fa0006/v1540323310/Portfolio_Assets/AA-logo_sskdv3.jpg",
     previewImage1: "Sample Preview Image",
     previewImage1Alt: "Sample Preview Image Alt Text",
     previewImage2: "Sample Preview Image",
@@ -115,7 +115,7 @@ const ExperienceContent = {
     shortDescription: "Online Bachelor's program for Software Engineering",
     additionalInfo: "",
     iconImage:
-      "https://res.cloudinary.com/arcane-lab/image/upload/e_blackwhite/v1540323313/UofP-logo_ugtqk8.png",
+      "https://res.cloudinary.com/arcane-lab/image/upload/e_bgremoval/c_crop,g_center,w_190/e_replace_color:green:80:9d0c1d/v1540323313/Portfolio_Assets/UofP-logo_ugtqk8.png",
     previewImage1: "Sample Preview Image",
     previewImage1Alt: "Sample Preview Image Alt Text",
     previewImage2: "Sample Preview Image",
@@ -129,7 +129,7 @@ const ExperienceContent = {
     shortDescription: "Ideas and initial designs for future projects",
     additionalInfo: "",
     iconImage:
-      "https://res.cloudinary.com/arcane-lab/image/upload/v1540323270/002-brain_p5bv1z.png",
+      "https://res.cloudinary.com/arcane-lab/image/upload/e_replace_color:green:80:000001/v1540323270/Portfolio_Assets/002-brain_p5bv1z.png",
     previewImage1: "Sample Preview Image",
     previewImage1Alt: "Sample Preview Image Alt Text",
     previewImage2: "Sample Preview Image",

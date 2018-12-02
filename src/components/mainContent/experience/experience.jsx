@@ -35,17 +35,21 @@ class Experience extends React.Component {
     const sideLength = Math.min(window.innerHeight, window.innerWidth) * 0.9;
 
     return (
-      <div
-        className="experienceContainer"
-        style={{ height: sideLength, width: sideLength }}
-      >
+      <div className="experienceContainer">
+        <div className="experienceNavigation">
+          <button className="backButton">Back</button>
+          <div className="dropDownMenu" />
+        </div>
         {this.state.activeProjectId ? (
           <ProjectDetail
             content={this.content[this.state.activeProjectId]}
             backFunction={this.projectIdToNull}
           />
         ) : (
-          <div className="projectsMenu">
+          <div
+            className="projectsMenu"
+            style={{ height: sideLength, width: sideLength }}
+          >
             {projectIds.map(id => (
               <img
                 key={id}
