@@ -1,0 +1,16 @@
+.projectDetailContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: grey;
+}
+
+.projectImages img {
+  width: 80%;
+}
+
+.projectImages {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}

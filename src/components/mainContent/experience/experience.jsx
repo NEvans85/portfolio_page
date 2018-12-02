@@ -33,6 +33,50 @@ class Experience extends React.Component {
     const projectIds = Object.keys(this.content);
 
     const sideLength = Math.min(window.innerHeight, window.innerWidth) * 0.9;
+
+    return (
+      <div
+        className="experienceContainer"
+        style={{ height: sideLength, width: sideLength }}
+      >
+        {this.state.activeProjectId ? (
+          <ProjectDetail
+            content={this.content[this.state.activeProjectId]}
+            backFunction={this.projectIdToNull}
+          />
+        ) : (
+          <div className="projectsMenu">
+            {projectIds.map(id => (
+              <img
+                key={id}
+                style={{ order: id }}
+                src={this.content[id].iconImage}
+                alt={this.content[id].iconImageAlt}
+                onMouseOver={() => this.handleHover(id)}
+                onMouseLeave={() =>
+                  this.setState({
+                    activeProjectId: null,
+                    cancelInterval: true,
+                    content: ""
+                  })
+                }
+                onClick={() => this.handleClick(id)}
+              />
+            ))}
+            {/* projectPreview is set in the center of the menu via CSS */}
+            <div className="projectPreview">
+              <p>{this.state.content.name}</p>
+              <p>{this.state.content.shortDescription}</p>
+              <p>{this.state.content.additionalInfo}</p>
+            </div>
+          </div>
+        )}
+      </div>
+    );
+  }
+}
+
+/*
     if (this.state.activeProjectId) {
       return (
         <ProjectDetail
@@ -63,7 +107,7 @@ class Experience extends React.Component {
               onClick={() => this.handleClick(id)}
             />
           ))}
-
+          // projectPreview is set in the center of the menu via CSS
           <div className="projectPreview">
             <p>{this.state.content.name}</p>
             <p>{this.state.content.shortDescription}</p>
@@ -73,6 +117,7 @@ class Experience extends React.Component {
       );
     }
   }
-}
 
+}
+*/
 export default Experience;

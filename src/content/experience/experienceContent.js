@@ -11,12 +11,14 @@ const ExperienceContent = {
     iconImage:
       "https://res.cloudinary.com/arcane-lab/image/upload/v1540236663/al_logo_krwdpq.png",
     iconImageAlt: "The Arcane Laboratory",
-    previewImage1: "Sample Preview Image",
-    previewImage1Alt: "Sample Preview Image Alt Text",
-    previewImage2: "Sample Preview Image",
+    previewImage3:
+      "https://res.cloudinary.com/arcane-lab/image/upload/v1542061601/ARCANELANB_DB_tomaj1.gif",
+    previewImage3Alt: "Sample Preview Image Alt Text",
+    previewImage2:
+      "https://res.cloudinary.com/arcane-lab/image/upload/v1506719786/Sep-29-2017_14-14-49_upqwmr.gif",
     previewImage2Alt: "Sample Preview Image Alt Text",
-    previewImage3: "Sample Preview Image",
-    previewImage3Alt: "Sample Preview Image Alt Text"
+    previewImage1: "Sample Preview Image",
+    previewImage1Alt: "Sample Preview Image Alt Text"
   },
   2: {
     id: 2,

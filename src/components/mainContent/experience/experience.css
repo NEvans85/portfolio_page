@@ -1,4 +1,10 @@
-.experienceContainer img {
+.experienceContainer {
+  background-color: #4e5156;
+  border-width: 20px;
+  margin: 0px;
+}
+
+.projectsMenu img {
   height: 95%;
   width: 95%;
   padding: 10%;
@@ -8,7 +14,7 @@
   margin: 0px;
 }
 
-.experienceContainer {
+.projectsMenu {
   margin: auto;
   display: grid;
   grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;

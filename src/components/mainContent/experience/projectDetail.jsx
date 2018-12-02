@@ -1,4 +1,5 @@
 import React from "react";
+import "./projectDetail.css";
 
 class ProjectDetail extends React.Component {
   constructor(props) {
@@ -9,7 +10,6 @@ class ProjectDetail extends React.Component {
   render() {
     return (
       <div className="projectDetailContainer">
-        <button onClick={() => this.props.backFunction()}>Back</button>
         <div className="projectImages">
           <img
             src={this.content.previewImage1}
@@ -26,6 +26,12 @@ class ProjectDetail extends React.Component {
         </div>
         <div className="projectDetails">
           <p>{this.content.longDescription}</p>
+          {this.content.type == "Project" && (
+            <div className="projectLinks">
+              <a href={this.content.liveLink}>Link to Live Project</a>
+              <a href={this.content.repoLink}>Link to Github Repo</a>
+            </div>
+          )}
         </div>
       </div>
     );
