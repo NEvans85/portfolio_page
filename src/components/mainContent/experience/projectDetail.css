@@ -1,5 +1,8 @@
 .projectDetailContainer {
   display: grid;
+  max-width: 950px;
+  margin-left: auto;
+  margin-right: auto;
   height: 95%;
   grid-template-columns: 1fr 1fr;
   background-color: grey;
@@ -16,7 +19,6 @@
   justify-content: space-around;
   height: 100%;
   align-items: center;
-  overflow-y: hidden;
 }
 
 .projectLinks {
