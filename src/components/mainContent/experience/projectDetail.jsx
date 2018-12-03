@@ -13,18 +13,19 @@ class ProjectDetail extends React.Component {
       <div className="projectDetailContainer">
         <div className="projectImages">
           {content.previewImages.map(imageData => (
-            <img key={imageData[0]} src={imageData[0]} alt={imageData[1]} />
+            <img key={imageData.url} src={imageData.url} alt={imageData.alt} />
           ))}
         </div>
         <div className="projectDetails">
           <h2>{content.name}</h2>
           <p>{content.longDescription}</p>
-          {content.type == "Project" && (
-            <div className="projectLinks">
-              <a href={content.liveLink}>Link to Live Project</a>
-              <a href={content.repoLink}>Link to Github Repo</a>
-            </div>
-          )}
+          <div className="projectLinks">
+            {content.links.map(linkData => (
+              <a key={linkData.url} href={linkData.url}>
+                {linkData.label}
+              </a>
+            ))}
+          </div>
         </div>
         <div className="experienceNavigation">
           <button
