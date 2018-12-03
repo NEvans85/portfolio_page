@@ -9,14 +9,12 @@ class ProjectDetail extends React.Component {
   render() {
     const content = this.props.content;
 
-    console.log(content);
-
     return (
       <div className="projectDetailContainer">
         <div className="projectImages">
-          <img src={content.previewImage1} alt={content.previewImage1Alt} />
-          <img src={content.previewImage2} alt={content.previewImage2Alt} />
-          <img src={content.previewImage3} alt={content.previewImage3Alt} />
+          {content.previewImages.map(imageData => (
+            <img key={imageData[0]} src={imageData[0]} alt={imageData[1]} />
+          ))}
         </div>
         <div className="projectDetails">
           <h2>{content.name}</h2>

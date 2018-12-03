@@ -11,15 +11,23 @@ const ExperienceContent = {
     iconImage:
       "https://res.cloudinary.com/arcane-lab/image/upload/e_replace_color:green:80:1f1f1f/v1540236663/Portfolio_Assets/al_logo_krwdpq.png",
     iconImageAlt: "The Arcane Laboratory",
-    previewImage3:
-      "https://res.cloudinary.com/arcane-lab/image/upload/v1542061601/ARCANELANB_DB_tomaj1.gif",
-    previewImage3Alt: "Sample Preview Image Alt Text",
-    previewImage2:
-      "https://res.cloudinary.com/arcane-lab/image/upload/v1506719786/Sep-29-2017_14-14-49_upqwmr.gif",
-    previewImage2Alt: "Sample Preview Image Alt Text",
-    previewImage1:
-      "https://res.cloudinary.com/arcane-lab/image/upload/v1543776208/Portfolio_Assets/Screen_Shot_2018-12-02_at_11.43.04_AM_s4rdxs.png",
-    previewImage1Alt: "Sample Preview Image Alt Text"
+    previewImages: [
+      [
+        "https://res.cloudinary.com/arcane-lab/image/upload/v1543776208/Portfolio_Assets/Screen_Shot_2018-12-02_at_11.43.04_AM_s4rdxs.png",
+        ,
+        "Sample Preview Image Alt Text"
+      ],
+      [
+        "https://res.cloudinary.com/arcane-lab/image/upload/v1542061601/ARCANELANB_DB_tomaj1.gif",
+        ,
+        "Sample Preview Image Alt Text"
+      ],
+      [
+        "https://res.cloudinary.com/arcane-lab/image/upload/v1506719786/Sep-29-2017_14-14-49_upqwmr.gif",
+        ,
+        "Sample Preview Image Alt Text"
+      ]
+    ]
   },
   2: {
     id: 2,
@@ -28,17 +36,21 @@ const ExperienceContent = {
     shortDescription: "A physics based soccer game concept",
     additionalInfo: "Tech Used: Javascript, HTML Canvas",
     longDescription: "Shuffleboard DSoccer Sample Long Description",
-    liveLink: "Sample Live Link",
-    repoLink: "Sample Repo Link",
+    liveLink: "https://nevans85.github.io/shuffleboard-soccer/",
+    repoLink: "https://github.com/NEvans85/shuffleboard-soccer",
     iconImage:
       "https://res.cloudinary.com/arcane-lab/image/upload/e_replace_color:green:80:000001/v1538057050/Portfolio_Assets/soccer-34898_1280.png",
     iconImageAlt: "Shuffleboard Soccer",
-    previewImage1: "Sample Preview Image",
-    previewImage1Alt: "Sample Preview Image Alt Text",
-    previewImage2: "Sample Preview Image",
-    previewImage2Alt: "Sample Preview Image Alt Text",
-    previewImage3: "Sample Preview Image",
-    previewImage3Alt: "Sample Preview Image Alt Text"
+    previewImages: [
+      [
+        "https://res.cloudinary.com/arcane-lab/image/upload/v1507522293/Screen_Shot_2017-10-06_at_12.04.14_PM_hyv8xr.png",
+        "Sample Preview Image Alt Text"
+      ],
+      [
+        "https://res.cloudinary.com/arcane-lab/image/upload/v1543863712/Portfolio_Assets/ShuffleBoard_Soccer_gif_nir5vz.gif",
+        "Sample Preview Image Alt Text"
+      ]
+    ]
   },
   3: {
     id: 3,
@@ -52,12 +64,7 @@ const ExperienceContent = {
     iconImage:
       "https://res.cloudinary.com/arcane-lab/image/upload/e_replace_color:green:80:000001/v1538057532/Portfolio_Assets/vr-headset-2.png",
     iconImageAlt: "Immerse",
-    previewImage1: "Sample Preview Image",
-    previewImage1Alt: "Sample Preview Image Alt Text",
-    previewImage2: "Sample Preview Image",
-    previewImage2Alt: "Sample Preview Image Alt Text",
-    previewImage3: "Sample Preview Image",
-    previewImage3Alt: "Sample Preview Image Alt Text"
+    previewImages: []
   },
   4: {
     id: 4,
@@ -71,12 +78,7 @@ const ExperienceContent = {
     iconImage:
       "https://res.cloudinary.com/arcane-lab/image/upload/e_replace_color:green:80:000001/v1540323262/Portfolio_Assets/services-portfolio_zzvid8.png",
     iconImageAlt: "Sample Icon Image Alt Text",
-    previewImage1: "Sample Preview Image",
-    previewImage1Alt: "Sample Preview Image Alt Text",
-    previewImage2: "Sample Preview Image",
-    previewImage2Alt: "Sample Preview Image Alt Text",
-    previewImage3: "Sample Preview Image",
-    previewImage3Alt: "Sample Preview Image Alt Text"
+    previewImages: []
   },
   5: {
     id: 5,
@@ -86,12 +88,7 @@ const ExperienceContent = {
     additionalInfo: "",
     iconImage:
       "https://res.cloudinary.com/arcane-lab/image/upload/e_replace_color:green:80:000001/v1540323275/Portfolio_Assets/003-www_qfv96s.png",
-    previewImage1: "Sample Preview Image",
-    previewImage1Alt: "Sample Preview Image Alt Text",
-    previewImage2: "Sample Preview Image",
-    previewImage2Alt: "Sample Preview Image Alt Text",
-    previewImage3: "Sample Preview Image",
-    previewImage3Alt: "Sample Preview Image Alt Text"
+    previewImages: []
   },
   6: {
     id: 6,
@@ -102,12 +99,7 @@ const ExperienceContent = {
     additionalInfo: "",
     iconImage:
       "https://res.cloudinary.com/arcane-lab/image/upload/e_replace_color:black:400:ffffff/e_replace_color:green:80:fa0006/v1540323310/Portfolio_Assets/AA-logo_sskdv3.jpg",
-    previewImage1: "Sample Preview Image",
-    previewImage1Alt: "Sample Preview Image Alt Text",
-    previewImage2: "Sample Preview Image",
-    previewImage2Alt: "Sample Preview Image Alt Text",
-    previewImage3: "Sample Preview Image",
-    previewImage3Alt: "Sample Preview Image Alt Text"
+    previewImages: []
   },
   7: {
     id: 7,
@@ -117,12 +109,7 @@ const ExperienceContent = {
     additionalInfo: "",
     iconImage:
       "https://res.cloudinary.com/arcane-lab/image/upload/e_bgremoval/c_crop,g_center,w_190/e_replace_color:green:80:9d0c1d/v1540323313/Portfolio_Assets/UofP-logo_ugtqk8.png",
-    previewImage1: "Sample Preview Image",
-    previewImage1Alt: "Sample Preview Image Alt Text",
-    previewImage2: "Sample Preview Image",
-    previewImage2Alt: "Sample Preview Image Alt Text",
-    previewImage3: "Sample Preview Image",
-    previewImage3Alt: "Sample Preview Image Alt Text"
+    previewImages: []
   },
   8: {
     id: 8,
@@ -131,12 +118,7 @@ const ExperienceContent = {
     additionalInfo: "",
     iconImage:
       "https://res.cloudinary.com/arcane-lab/image/upload/e_replace_color:green:80:000001/v1540323270/Portfolio_Assets/002-brain_p5bv1z.png",
-    previewImage1: "Sample Preview Image",
-    previewImage1Alt: "Sample Preview Image Alt Text",
-    previewImage2: "Sample Preview Image",
-    previewImage2Alt: "Sample Preview Image Alt Text",
-    previewImage3: "Sample Preview Image",
-    previewImage3Alt: "Sample Preview Image Alt Text"
+    previewImages: []
   }
 };
 
