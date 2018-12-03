@@ -100,7 +100,7 @@ const ExperienceContent = {
       "Intense 13 week bootcamp teaching full stack web development",
     additionalInfo: "",
     iconImage:
-      "https://res.cloudinary.com/arcane-lab/image/upload/e_bgremoval/e_replace_color:green:80:fa0006/v1540323310/Portfolio_Assets/AA-logo_sskdv3.jpg",
+      "https://res.cloudinary.com/arcane-lab/image/upload/e_replace_color:black:400:ffffff/e_replace_color:green:80:fa0006/v1540323310/Portfolio_Assets/AA-logo_sskdv3.jpg",
     previewImage1: "Sample Preview Image",
     previewImage1Alt: "Sample Preview Image Alt Text",
     previewImage2: "Sample Preview Image",

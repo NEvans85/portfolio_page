@@ -14,19 +14,34 @@ class Experience extends React.Component {
     this.content = ExperienceContent;
 
     this.projectIdToNull = this.projectIdToNull.bind(this);
+    this.setActiveProjectId = this.setActiveProjectId.bind(this);
   }
 
   handleHover(id) {
     this.setState({ content: this.content[id] });
   }
 
-  handleClick(id) {
+  handleNavigation(option) {
+    const activeId = this.state.activeProjectId;
+    switch (option) {
+      case "prev":
+        this.setActiveProjectId(activeId == 1 ? 8 : activeId - 1);
+        break;
+      case "next":
+        this.setActiveProjectId(activeId == 8 ? 1 : activeId + 1);
+        break;
+      case "menu":
+        this.projectIdToNull();
+        break;
+    }
+  }
+
+  setActiveProjectId(id) {
     this.setState({ activeProjectId: id });
   }
 
   projectIdToNull() {
     this.setState({ activeProjectId: null });
-    console.log(this.state);
   }
 
   render() {
@@ -34,17 +49,12 @@ class Experience extends React.Component {
 
     const sideLength = Math.min(window.innerHeight, window.innerWidth) * 0.9;
 
+    const activeId = this.state.activeProjectId;
+
     return (
       <div className="experienceContainer">
-        <div className="experienceNavigation">
-          <button className="backButton">Back</button>
-          <div className="dropDownMenu" />
-        </div>
-        {this.state.activeProjectId ? (
-          <ProjectDetail
-            content={this.content[this.state.activeProjectId]}
-            backFunction={this.projectIdToNull}
-          />
+        {activeId ? (
+          <ProjectDetail content={this.content[activeId]} />
         ) : (
           <div
             className="projectsMenu"
@@ -64,7 +74,7 @@ class Experience extends React.Component {
                     content: ""
                   })
                 }
-                onClick={() => this.handleClick(id)}
+                onClick={() => this.setActiveProjectId(parseInt(id))}
               />
             ))}
             {/* projectPreview is set in the center of the menu via CSS */}
@@ -75,53 +85,33 @@ class Experience extends React.Component {
             </div>
           </div>
         )}
+        {activeId && (
+          <div className="experienceNavigation">
+            <button
+              className="prevButton"
+              onClick={() => this.handleNavigation("prev")}
+            >
+              Previous
+            </button>
+            <button
+              className="menuButton"
+              onClick={() => this.handleNavigation("menu")}
+            >
+              Menu
+            </button>
+            <button
+              className="nextButton"
+              onClick={() =>
+                this.setActiveProjectId(activeId == 8 ? 1 : activeId + 1)
+              }
+            >
+              Next
+            </button>
+          </div>
+        )}
       </div>
     );
   }
 }
 
-/*
-    if (this.state.activeProjectId) {
-      return (
-        <ProjectDetail
-          content={this.content[this.state.activeProjectId]}
-          backFunction={this.projectIdToNull}
-        />
-      );
-    } else {
-      return (
-        <div
-          className="experienceContainer"
-          style={{ height: sideLength, width: sideLength }}
-        >
-          {projectIds.map(id => (
-            <img
-              key={id}
-              style={{ order: id }}
-              src={this.content[id].iconImage}
-              alt={this.content[id].iconImageAlt}
-              onMouseOver={() => this.handleHover(id)}
-              onMouseLeave={() =>
-                this.setState({
-                  activeProjectId: null,
-                  cancelInterval: true,
-                  content: ""
-                })
-              }
-              onClick={() => this.handleClick(id)}
-            />
-          ))}
-          // projectPreview is set in the center of the menu via CSS
-          <div className="projectPreview">
-            <p>{this.state.content.name}</p>
-            <p>{this.state.content.shortDescription}</p>
-            <p>{this.state.content.additionalInfo}</p>
-          </div>
-        </div>
-      );
-    }
-  }
-
-}
-*/
 export default Experience;
