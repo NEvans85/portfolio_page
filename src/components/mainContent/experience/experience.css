@@ -9,6 +9,7 @@
   cursor: pointer;
   border: 10px solid grey;
   box-sizing: border-box;
+  border-radius: 10px;
   margin: 0px;
 }
 
@@ -19,6 +20,9 @@
   align-items: center;
   justify-items: center;
   background-color: black;
+  padding: 1%;
+  border-radius: 20px;
+  box-sizing: border-box;
 }
 
 .projectPreview {
@@ -28,8 +32,4 @@
   padding: 5%;
   color: green;
   box-sizing: border-box;
-}
-
-.experienceNavigation {
-  height: 5%;
 }

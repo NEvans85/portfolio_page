@@ -28,6 +28,26 @@ class ProjectDetail extends React.Component {
             </div>
           )}
         </div>
+        <div className="experienceNavigation">
+          <button
+            className="prevButton"
+            onClick={() => this.props.navFunction("prev")}
+          >
+            Previous
+          </button>
+          <button
+            className="menuButton"
+            onClick={() => this.props.navFunction("menu")}
+          >
+            Menu
+          </button>
+          <button
+            className="nextButton"
+            onClick={() => this.props.navFunction("next")}
+          >
+            Next
+          </button>
+        </div>
       </div>
     );
   }

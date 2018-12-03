@@ -5,7 +5,10 @@
   margin-right: auto;
   height: 95%;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 95% 5%;
   background-color: grey;
+  border-radius: 20px;
+  box-shadow: 5px 2px;
 }
 
 .projectImages img {
@@ -24,4 +27,19 @@
 .projectLinks {
   display: flex;
   flex-direction: column;
+}
+
+.experienceNavigation {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.experienceNavigation button {
+  width: 18%;
+  height: 100%;
+  border-radius: 10px;
 }

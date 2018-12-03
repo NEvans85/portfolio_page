@@ -15,6 +15,7 @@ class Experience extends React.Component {
 
     this.projectIdToNull = this.projectIdToNull.bind(this);
     this.setActiveProjectId = this.setActiveProjectId.bind(this);
+    this.handleNavigation = this.handleNavigation.bind(this);
   }
 
   handleHover(id) {
@@ -55,7 +56,10 @@ class Experience extends React.Component {
     return (
       <div className="experienceContainer">
         {activeId ? (
-          <ProjectDetail content={this.content[activeId]} />
+          <ProjectDetail
+            content={this.content[activeId]}
+            navFunction={this.handleNavigation}
+          />
         ) : (
           <div
             className="projectsMenu"
@@ -84,30 +88,6 @@ class Experience extends React.Component {
               <p>{this.state.content.shortDescription}</p>
               <p>{this.state.content.additionalInfo}</p>
             </div>
-          </div>
-        )}
-        {activeId && (
-          <div className="experienceNavigation">
-            <button
-              className="prevButton"
-              onClick={() => this.handleNavigation("prev")}
-            >
-              Previous
-            </button>
-            <button
-              className="menuButton"
-              onClick={() => this.handleNavigation("menu")}
-            >
-              Menu
-            </button>
-            <button
-              className="nextButton"
-              onClick={() =>
-                this.setActiveProjectId(activeId == 8 ? 1 : activeId + 1)
-              }
-            >
-              Next
-            </button>
           </div>
         )}
       </div>
