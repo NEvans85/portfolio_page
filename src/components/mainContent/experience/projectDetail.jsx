@@ -19,6 +19,7 @@ class ProjectDetail extends React.Component {
           <img src={content.previewImage3} alt={content.previewImage3Alt} />
         </div>
         <div className="projectDetails">
+          <h2>{content.name}</h2>
           <p>{content.longDescription}</p>
           {content.type == "Project" && (
             <div className="projectLinks">

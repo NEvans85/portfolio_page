@@ -1,11 +1,13 @@
 .projectDetailContainer {
   display: grid;
+  height: 95%;
   grid-template-columns: 1fr 1fr;
   background-color: grey;
 }
 
 .projectImages img {
   width: 80%;
+  max-height: 31%;
 }
 
 .projectImages {
@@ -13,4 +15,11 @@
   flex-direction: column;
   justify-content: space-around;
   height: 100%;
+  align-items: center;
+  overflow-y: hidden;
+}
+
+.projectLinks {
+  display: flex;
+  flex-direction: column;
 }

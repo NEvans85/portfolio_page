@@ -17,7 +17,8 @@ const ExperienceContent = {
     previewImage2:
       "https://res.cloudinary.com/arcane-lab/image/upload/v1506719786/Sep-29-2017_14-14-49_upqwmr.gif",
     previewImage2Alt: "Sample Preview Image Alt Text",
-    previewImage1: "Sample Preview Image",
+    previewImage1:
+      "https://res.cloudinary.com/arcane-lab/image/upload/v1543776208/Portfolio_Assets/Screen_Shot_2018-12-02_at_11.43.04_AM_s4rdxs.png",
     previewImage1Alt: "Sample Preview Image Alt Text"
   },
   2: {

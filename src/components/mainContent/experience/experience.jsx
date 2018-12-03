@@ -25,10 +25,10 @@ class Experience extends React.Component {
     const activeId = this.state.activeProjectId;
     switch (option) {
       case "prev":
-        this.setActiveProjectId(activeId == 1 ? 8 : activeId - 1);
+        this.setActiveProjectId(activeId === 1 ? 8 : activeId - 1);
         break;
       case "next":
-        this.setActiveProjectId(activeId == 8 ? 1 : activeId + 1);
+        this.setActiveProjectId(activeId === 8 ? 1 : activeId + 1);
         break;
       case "menu":
         this.projectIdToNull();
@@ -47,7 +47,8 @@ class Experience extends React.Component {
   render() {
     const projectIds = Object.keys(this.content);
 
-    const sideLength = Math.min(window.innerHeight, window.innerWidth) * 0.9;
+    const menuSideLength =
+      Math.min(window.innerHeight, window.innerWidth) * 0.9;
 
     const activeId = this.state.activeProjectId;
 
@@ -58,7 +59,7 @@ class Experience extends React.Component {
         ) : (
           <div
             className="projectsMenu"
-            style={{ height: sideLength, width: sideLength }}
+            style={{ height: menuSideLength, width: menuSideLength }}
           >
             {projectIds.map(id => (
               <img
