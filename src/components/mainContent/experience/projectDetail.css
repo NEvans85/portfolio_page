@@ -11,17 +11,17 @@
   box-shadow: 5px 2px;
 }
 
-.projectImages img {
-  width: 80%;
-  max-height: 31%;
-}
-
 .projectImages {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   height: 100%;
   align-items: center;
+}
+
+.projectImages img {
+  width: 80%;
+  max-height: 31%;
 }
 
 .projectLinks {

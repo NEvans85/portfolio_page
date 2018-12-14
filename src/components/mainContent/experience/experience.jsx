@@ -48,8 +48,10 @@ class Experience extends React.Component {
   render() {
     const projectIds = Object.keys(this.content);
 
-    const menuSideLength =
-      Math.min(window.innerHeight, window.innerWidth) * 0.9;
+    const menuSideLength = Math.max(
+      600,
+      Math.min(window.innerHeight, window.innerWidth) * 0.9
+    );
 
     const activeId = this.state.activeProjectId;
 

@@ -129,7 +129,21 @@ const ExperienceContent = {
     iconImage:
       "https://res.cloudinary.com/arcane-lab/image/upload/e_replace_color:green:80:000001/v1540323275/Portfolio_Assets/003-www_qfv96s.png",
     previewImages: [],
-    links: []
+    links: [
+      {
+        url: "https://app.codesignal.com/profile/nevans85",
+        label: "CodeSignal Profile"
+      },
+      {
+        url: "https://www.hackerrank.com/nevans85_pro",
+        label: "HackerRank Profile"
+      },
+      {
+        url:
+          "https://www.codingame.com/profile/7b5b82c94f6edef6ad7fd23f90444c612678612",
+        label: "CodinGame Profile"
+      }
+    ]
   },
   6: {
     id: 6,
