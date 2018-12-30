@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "ajax": "0.0.4",
+    "emailjs-com": "^2.3.2",
     "lodash": "^4.17.11",
     "node-sass-chokidar": "^1.3.3",
     "react": "^16.5.0",
@@ -15,8 +16,7 @@
   "scripts": {
     "eject": "react-scripts eject",
     "build-css": "node-sass-chokidar src/ -o src/",
-    "watch-css":
-      "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom"
